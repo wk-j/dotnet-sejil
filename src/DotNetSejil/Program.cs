@@ -16,7 +16,10 @@ namespace DotNetSejil {
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .AddSejil("/sejil", LogLevel.Debug) // sejil
+                .ConfigureLogging(builder => {
+                    // builder.ClearProviders();
+                })
+                .AddSejil("/sejil", LogLevel.Information) // sejil
                 .UseStartup<Startup>();
     }
 }

@@ -1,0 +1,19 @@
+
+POST https://localhost:5001/api/hello/hi
+Content-Type: application/json
+
+{
+    "from": "wk",
+    "message": "hi"
+}
+
+
+###
+
+POST https://localhost:5001/api/hello/hi
+Content-Type: application/json
+
+{
+    "from": "bot",
+    "message": "hi"
+}
